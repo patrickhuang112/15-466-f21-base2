@@ -162,7 +162,6 @@ void Game::generate_walls() {
             active_walls.push_back(i); 
         }
     }
-    printf("size: %d", (int)active_walls.size());
 }
 
 void Game::generate_maze() {
@@ -204,7 +203,7 @@ void Game::move_player(double dx, double dy) {
         player_model->position = glm::vec3(player.x, player.y, 0.0); 
     }
     if (end.intersect(player)) {
-        printf("GAME OVER!\n");
+        printf("GAME OVER! GOOD JOB!\n");
         game_over = true;
     }
 }
