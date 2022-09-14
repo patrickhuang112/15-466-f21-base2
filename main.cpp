@@ -111,7 +111,6 @@ int main(int argc, char **argv) {
 		glViewport(0, 0, drawable_size.x, drawable_size.y);
 	};
 	on_resize();
-
 	//This will loop until the current mode is set to null:
 	while (Mode::current) {
 		//every pass through the game loop creates one frame of output

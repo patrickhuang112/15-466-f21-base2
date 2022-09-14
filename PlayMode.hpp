@@ -2,6 +2,8 @@
 
 #include "Scene.hpp"
 
+#include "Game.hpp"
+
 #include <glm/glm.hpp>
 
 #include <vector>
@@ -31,6 +33,7 @@ struct PlayMode : Mode {
 	Scene::Transform *hip = nullptr;
 	Scene::Transform *upper_leg = nullptr;
 	Scene::Transform *lower_leg = nullptr;
+	Scene::Transform *cube1 = nullptr;
 	glm::quat hip_base_rotation;
 	glm::quat upper_leg_base_rotation;
 	glm::quat lower_leg_base_rotation;
@@ -38,5 +41,7 @@ struct PlayMode : Mode {
 	
 	//camera:
 	Scene::Camera *camera = nullptr;
+
+	Game::Game game;
 
 };

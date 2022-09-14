@@ -1,5 +1,5 @@
 .PHONY : all
-
+# TODO: change all of these thingss
 #n.b. the '-y' sets autoexec scripts to 'on' so that driver expressions will work
 UNAME_S := $(shell uname -s)
 ifeq ($(UNAME_S),Darwin)
